@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import AppBar from "@mui/material/AppBar";
+import Container from "@mui/material/Container";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+import Aot from "./pages/Aot";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fixed>
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <Typography variant="h6" color="inherit" component="div">
+            Quotes
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Grid
+        container
+        style={{
+          backgroundColor: "#806491",
+          height: "100%",
+          padding: 10,
+        }}
+      >
+        <Aot />
+      </Grid>
+    </Container>
   );
 }
 

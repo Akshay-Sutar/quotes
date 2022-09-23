@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* default is 16. 62.5 is 10px in percentage*/
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* Does not work on Safari & Edge */
+  /* scroll-behavior: smooth; */
+}
+
 .App {
   text-align: center;
 }
@@ -37,8 +51,28 @@
   }
 }
 
-.quotes-container {
+.quotes-container,
+.quotes-container-items {
   display: flex;
-  row-gap: 15px;
   flex-direction: column;
+}
+
+.quotes-container-items {
+  row-gap: 50px;
+}
+
+.quote-image {
+  transition: all 0.4s;
+}
+
+.quote-image:hover {
+  transform: scale(1.02);
+}
+
+.quote-text {
+  transition: all 0.4s;
+}
+
+.quote-text:hover {
+  transform: scale(1.01);
 }

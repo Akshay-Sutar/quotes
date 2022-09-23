@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid";
 
 export default function QuoteCard({ quote }) {
   return (
-    <Paper elevation={5} style={{ height: 400, padding: 10 }}>
+    <Paper elevation={5} style={{ height: 420, padding: 10 }}>
       <Card
         style={{
           height: "400px",
@@ -16,7 +16,18 @@ export default function QuoteCard({ quote }) {
         }}
       >
         <CardContent style={{ padding: 0, width: "100%" }}>
-          <Grid container spacing={2} style={{ marginTop: 0, padding: 5 }}>
+          <Grid
+            container
+            spacing={2}
+            style={{
+              marginTop: 0,
+              padding: 5,
+              backgroundColor: "#EA9828",
+              position: "relative",
+              right: "5%",
+              borderRadius:"5px"
+            }}
+          >
             <Grid
               item
               xs={6}
@@ -26,19 +37,28 @@ export default function QuoteCard({ quote }) {
                 src={process.env.PUBLIC_URL + `/assets/` + quote.image}
                 style={{ height: "380px", borderRadius: 10 }}
                 alt="Eren Jaegar"
+                className="quote-image"
               />
             </Grid>
-            <Grid item xs={6} style={{ display: "flex", alignItems: "center" }}>
+            <Grid
+              item
+              xs={6}
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
               <div>
                 <Typography
-                  variant="h4"
+                  variant="h3"
                   style={{ color: "#fff", fontFamily: "IM Fell English" }}
+                  className="quote-text"
                 >
                   {`"${quote.qoute}"`}
                 </Typography>
                 <Typography
                   gutterBottom
-                  variant="h6"
+                  variant="h4"
                   component="div"
                   style={{ color: "#fff", marginTop: 15 }}
                 >

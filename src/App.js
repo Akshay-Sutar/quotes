@@ -11,7 +11,7 @@ function App() {
     <Container fixed>
       <AppBar position="static">
         <Toolbar variant="dense">
-          <Typography variant="h6" color="inherit" component="div">
+          <Typography variant="h3" color="inherit" component="div">
             Quotes
           </Typography>
         </Toolbar>

@@ -16,18 +16,7 @@ export default function QuoteCard({ quote }) {
         }}
       >
         <CardContent style={{ padding: 0, width: "100%" }}>
-          <Grid
-            container
-            spacing={2}
-            style={{
-              marginTop: 0,
-              padding: 5,
-              backgroundColor: "#EA9828",
-              position: "relative",
-              right: "5%",
-              borderRadius:"5px"
-            }}
-          >
+          <Grid container spacing={2} style={{ marginTop: 0, padding: 5 }}>
             <Grid
               item
               xs={6}
@@ -40,14 +29,7 @@ export default function QuoteCard({ quote }) {
                 className="quote-image"
               />
             </Grid>
-            <Grid
-              item
-              xs={6}
-              style={{
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
+            <Grid item xs={6} style={{ display: "flex", alignItems: "center" }}>
               <div>
                 <Typography
                   variant="h3"

@@ -8,7 +8,7 @@ export default function Aot() {
     <div className="quotes-container">
       <Typography
         align="center"
-        variant="h3"
+        variant="h1"
         component="div"
         style={{ color: "#fff", marginTop: 15 }}
       >
